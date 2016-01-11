@@ -13,45 +13,7 @@ A [vile](http://vile.io) plugin for [csslint](http://csslint.net).
 
 ## Configuration
 
-If you have a `.csslintrc` in your `pwd` it will be used.
-
-```yml
-csslint:
-  config: .csslintrc
-```
-
-### Ignoring Files
-
-If you have a `.csslintignore` file, you can have
-`--exclude-list` entries in it.
-
-Example:
-
-```
-[
-  "bower_components",
-  "node_modules"
-]
-```
-
-Then, in your `.vile.yml`:
-
-```yml
-csslint:
-  ignore: .csslintignore
-```
-
-You can also inline an array:
-
-```yml
-csslint:
-  ignore: [
-      "node_modules",
-      "bower_components"
-    ]
-```
-
-Note: The `.csslintignore` file is specific to `vile`.
+If you have a `.csslintrc` in your project root, it will be used.
 
 ## Architecture
 
