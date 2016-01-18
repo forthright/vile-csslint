@@ -2,6 +2,12 @@
 
 A [vile](http://vile.io) plugin for [csslint](http://csslint.net).
 
+**NOTICE**
+
+This project is not actively maintained. If you want to
+help maintain the project, or if you have a beter
+alternative to switch to, please open an issue and ask!
+
 ## Requirements
 
 - [nodejs](http://nodejs.org)

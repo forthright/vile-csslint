@@ -24,19 +24,23 @@ let csslint = () =>
 
 let to_issue_type = (severity="") => {
   return severity.toLowerCase() == "warning" ?
-    vile.WARNING : vile.ERROR
+    vile.STYL : vile.ERR
 }
 
 let vile_issue = (issue, file) => {
-  return vile.issue(
-    to_issue_type(issue.severity),
-    file,
-    issue.reason,
-    {
-      line: issue.line,
-      character: issue.char
+  return vile.issue({
+    type: to_issue_type(issue.severity),
+    path: file,
+    title: issue.reason,
+    message: issue.reason,
+    signature: `csslint::${issue.reason}`,
+    where: {
+      start: {
+        line: issue.line,
+        character: issue.char
+      }
     }
-  )
+  })
 }
 
 let punish = (plugin_config) =>
