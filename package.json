@@ -1,5 +1,5 @@
 {
-  "name": "@brentlintner/vile-csslint",
+  "name": "@forthright/vile-csslint",
   "version": "0.2.0",
   "description": "A vile plugin for csslint",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
     "lint"
   ],
   "dependencies": {
-    "@brentlintner/vile": "^0.5.2",
+    "@forthright/vile": "^0.5.2",
     "bluebird": "^3.1.1",
     "csslint": "^0.10.0",
     "lodash": "^3.10.1",
