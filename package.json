@@ -2,11 +2,25 @@
   "name": "@forthright/vile-csslint",
   "version": "0.2.4",
   "description": "A vile plugin for csslint",
+  "author": "Brent Lintner <brent.lintner@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/brentlintner/vile-csslint/issues"
+  },
+  "homepage": "https://github.com/brentlintner/vile-csslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brentlintner/vile-csslint.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel -d lib -m common src",
     "dev": "bin/dev",
     "test": "bin/test"
+  },
+  "engines": {
+    "node": ">= 0.12",
+    "npm": ">= 2.0.0"
   },
   "keywords": [
     "vile",
@@ -15,11 +29,13 @@
     "lint"
   ],
   "dependencies": {
-    "@forthright/vile": "^0.6.0",
     "bluebird": "^3.3.4",
-    "csslint": "^0.10.0",
-    "lodash": "^4.7.0",
+    "lodash": "^4.8.2",
     "xml2js": "^0.4.16"
+  },
+  "peerDependencies": {
+    "@forthright/vile": "^0.6.2",
+    "csslint": "^0.10.0"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -27,8 +43,9 @@
     "chai": "^3.5.0",
     "coffee-script": "^1.10.0",
     "istanbul": "^0.4.2",
-    "mimus": "^0.1.2",
+    "mimus": "^0.2.1",
     "mocha": "^2.4.5",
+    "npm-check-updates": "^2.6.1",
     "release-it": "^2.3.1",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0"

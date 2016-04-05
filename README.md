@@ -1,6 +1,6 @@
 # vile-csslint
 
-A [vile](http://vile.io) plugin for [csslint](http://csslint.net).
+A [vile](https://vile.io) plugin for [csslint](http://csslint.net).
 
 **NOTICE**
 
@@ -15,7 +15,9 @@ alternative to switch to, please open an issue and ask!
 
 ## Installation
 
-    npm i vile-csslint
+    npm i csslint --save-dev
+    npm i @forthright/vile --save-dev
+    npm i @forthright/vile-csslint --save-dev
 
 ## Configuration
 

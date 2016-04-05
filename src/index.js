@@ -5,9 +5,7 @@ let Promise = require("bluebird")
 let xml = require("xml2js")
 let log = vile.logger.create("csslint")
 
-// TODO: don't relative require like this (broken in npm v3?)
-const node_modules = path.join(__dirname, "..", "node_modules")
-const csslint_bin = path.join(node_modules, ".bin", "csslint")
+const csslint_bin = "csslint"
 
 let csslint = () =>
   vile
