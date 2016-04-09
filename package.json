@@ -1,6 +1,6 @@
 {
   "name": "@forthright/vile-csslint",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A vile plugin for csslint",
   "author": "Brent Lintner <brent.lintner@gmail.com>",
   "license": "MPL-2.0",
