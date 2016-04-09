@@ -34,7 +34,7 @@
     "xml2js": "^0.4.16"
   },
   "peerDependencies": {
-    "@forthright/vile": "^0.6.2",
+    "@forthright/vile": ">= 0.7.0",
     "csslint": "^0.10.0"
   },
   "devDependencies": {
