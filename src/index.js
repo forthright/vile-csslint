@@ -12,13 +12,15 @@ let csslint = () =>
     .spawn(csslint_bin, {
       args: [ ".", "--format=csslint-xml" ]
     })
-    .then((stdout) =>
-      new Promise((resolve, reject) => {
+    .then((spawn_data) => {
+      let stdout = _.get(spawn_data, "stdout", "")
+      return new Promise((resolve, reject) => {
         xml.parseString(stdout, (err, json) => {
           if (err) log.error(err)
           resolve(json.csslint.file)
         })
-      }))
+      })
+    })
 
 let to_issue_type = (severity="") => {
   return severity.toLowerCase() == "warning" ?
