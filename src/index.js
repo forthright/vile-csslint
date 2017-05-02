@@ -1,6 +1,6 @@
 let path = require("path")
 let _ = require("lodash")
-let vile = require("@forthright/vile")
+let vile = require("vile")
 let Promise = require("bluebird")
 let xml = require("xml2js")
 let log = vile.logger.create("csslint")
