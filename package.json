@@ -1,7 +1,7 @@
 {
   "name": "vile-csslint",
   "version": "0.2.13",
-  "description": "A vile plugin for csslint",
+  "description": "Ensure consistent style in your CSS.",
   "main": "lib/index.js",
   "files": [
     "lib",
